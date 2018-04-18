@@ -97,10 +97,14 @@ section h1 {
     margin-bottom: 10px;
 }
 
-.info i{
+.info li i {
+    width: 20px;
+    padding: 5px;
+    background-color: #7b9a9f;
+    color: #FFF;
+    margin-right: 6px;
     text-align: center;
 }
-
 
 
 /*******Experience*******/
