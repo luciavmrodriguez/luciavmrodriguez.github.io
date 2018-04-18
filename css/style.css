@@ -72,10 +72,14 @@ section h1 {
 }
 .photo{
     text-align: center;
+    position: relative;
 }
 .photo img{
     width: 250px;
     height: auto;
+
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 .personal-wrapper .info{
     display: flex;
@@ -106,10 +110,65 @@ section h1 {
     text-align: center;
 }
 
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-18px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+.photo:after {
+ 
+    content: "";
+    width: 70px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    animation: pulse 6s infinite;
+    right: 88px;
+      top: 230px;
+    z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+     background-color: rgba(0, 0, 0, 0.5);
+  }
+ 
+  50%{
+		background-color: rgba(0, 0, 0, 0);
+  }
+ 
+  100%{
+  	background-color: rgba(0, 0, 0, 0.5);
+
+  }
+}
 
 /*******Experience*******/
 .section-experience{ 
     background-color: #F9F9F9;
+    position: relative;
+}
+.section-experience:after {
+    content: "";
+    position: absolute;
+    width: 735px;
+    height: 500px;
+    background-color: #b2ccb3;
+    top: -149px;
+    z-index: -11;
+    border-radius: 100%;
+    margin: 0 auto;
+    left: 21%;
 }
 
 .exp-wrapper{
