@@ -1,152 +1,219 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucia Rodriguez</title>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
-        
-    </head>
+    <link rel="stylesheet" href="css/theme.css">
     
-    
-    <body>
-    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<!--<header>
+		<a href="#"><h2>LR</h2></a>
+		<nav>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Work Experience</a></li>
+			<li><a href="#">Other Stuff</a></li>
+			<li><a href="#">Contact Me</a></li>
+		</nav>
+	</header>-->
+
+
+	<section class="about-me">
+		<!--<div class="background-image" style="background-image: url(img/headerbg.jpg);"></div>-->
+		<div class="sky">
+            <div class="cloud-1"></div>
+            <div class="cloud-2"></div>
+            <h1>Luc&iacute;a Rodriguez</h1>
+		    <h3>Frontend Developer</h3>
+            <!--<a href="#" class="btn">Download my CV</a>-->
+           
+        </div>
+        <div class="ground">
+            <img class="me-cartoon" src="img/locia.png">
+            <img class="cloud" src="img/cloud-1.png">
+        </div>
+	</section>
+
+
+	<section class="hi-there">
+            <div class="sec-content">
+                <h3 class="title">Hi there!</h3>
+                <p id="presentation">My name is Lucía Rodriguez, I’m <span class="age">27</span> years old, I’m from Caracas (Venezuela) and I’m a frontend developer. I love technology and arts and I’m absolutely passionate about the intersection of both.
         
-        <!-------------------------------------------------->
-        <!-----------***********ABOUT ME***********--------->
-        <!-------------------------------------------------->
-        <section class="section-personal">
-            <h1>About Me</h1>
-            <div>
-                <div class="personal-wrapper">
-                    <div class="resume">
-                        <p>Hi there! My name is Lucía Rodriguez, I’m 26 years old, I’m from Caracas (Venezuela) and I’m a frontend developer. I love technology and arts and I’m absolutely passionate about the intersection of both.</p>
-                  
-                    </div>
-                    <div class="photo">
-                        <img src="img/locia.png">
-                    </div>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                                06-10-1991
-                                
-                            </li>
-                            <li>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                Lisbon, Portugal
-                            </li>
-                            <li>
-                               <i class="fa fa-envelope-o" aria-hidden="true"></i> luciavmrodriguez@gmail.com
-                            </li>
-                            <li>
-                                <i class="fa fa-mobile" aria-hidden="true"></i>+351912345678
-                            </li>
-                            <li>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>luciamrodriguez
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-------------------------------------------------->
-        <!-----------**********EXPERIENCE**********--------->
-        <!-------------------------------------------------->
-        <section class="section-experience">
-            <h1>Experience</h1>
-            <div>
-                <div class="exp-wrapper">
-                    <div class="date-company">
-                        <h3>Bee Engineering</h3>
-                        <h4>Feb 2017 - present</h4>
-                    </div>
-                    <div class="job-description">
-                        <h3>Frontend Developer</h3>
-                        <p>Outsystems Frontend development.</p>
-                    </div>
-                </div>
-                <div class="exp-wrapper">
-                    <div class="date-company">
-                        <h3>WinTrust</h3>
-                        <h4>May 2016 - Jan 2017</h4>
-                    </div>
-                    <div class="job-description">
-                        <h3>IT Consultant</h3>
-                         
-                            <ul>
-                                <li><strong>Test Automation:</strong> VB Script, HP UFT, ALM, Robot Framework, Jenkins.</li>
-                                <li><strong>Outsystems development:</strong> Outsystems, CSS3, HTML5, Javascript</li>
-                                <li><strong>MVC C# .Net:</strong> C3, HTML5, CSS3, JQuery, Ajax, JSON, SQL</li>
-                            </ul>
-                        
-                    </div>
-                </div>
-                <div class="exp-wrapper">
-                    <div class="date-company">
-                        <h3>Bold International</h3>
-                        <h4>Out 2015 - Apr 2016</h4>
-                    </div>
-                    <div class="job-description">
-                        <h3>IT Consultant</h3>
-                        <p><strong>Test Automation:</strong> VB Script, HP UFT, ALM, Robot Framework, Jenkins. </p>
-                    </div>
-                </div>
-                <div class="exp-wrapper">
-                    <div class="date-company">
-                        <h3>WeWow, Lda.</h3>
-                        <h4>Mar 2015 - Jun 2015</h4>
-                    </div>
-                    <div class="job-description">
-                        <h3>Internship</h3>
-                        <p><strong>MVC C# .NET:</strong> C#, HTML5, CSS3, JQuery, Javascript, Ajax, JSON, SQL</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        
-        <!-------------------------------------------------->
-        <!-----------**********EDUCATION**********---------->
-        <!-------------------------------------------------->
-        <section class="section-education">
-            <h1>Education</h1>
-            <div>
-                <div class="education-wrapper">
-                    <div><img src="img/universidade.png" alt="universidadelogo"></div>
-                    <div class="university">
-                        <h3>Universidade Nova de Lisboa</h3>
-                        <h4>Sep 2009 - Jul 2015</h4>
-                    </div>
-                    <div class="course">
-                        <h3>Computer Science Engineering (Undergraduate Degree)</h3>
-                        <p>Nam nec enim scelerisque, sollicitudin justo at, gravida tellus. Nullam quis est tempor, convallis quam nec, maximus est.</p>
+                </p>
+                    
+                <ul class="basic-info">
+                    <li>
+                        <i class="fa fa-birthday-cake"></i>
+                        06-10-1991   
+                    </li>
+                    <li>
+                        <i class="fa fa-home"></i>
+                        Caracas, RBV
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        Lisbon, PT    
+                    </li>
+                </ul>
+                
+                    <div class="education">
+                            <div>
+                                <h3>Universidade Nova de Lisboa</h3>
+                                <p>Sep '09 - Jun '15</p>
+                            </div>
+                            <div>
+                                <h3>Computer Science Engineering</h3>
+                                <p>Java, Object Oriented Programming, Algorithms</p>
+                            </div>    
                     </div>
                 
-                </div>
             </div>
             
-        </section>
-        
-        <section class="section-separator">
-        </section>
-        
-        <section class="section-skills">
-            <h1>Skills and Tools</h1>
-            <div class="skills-wrapper">
-                <h2>Under construction</h2>
-                <div></div>
-                <div></div>
-                <div></div>
+
+
+                
+
+	</section>
+	
+
+	<section class="work-exp">
+        <div class="sec-content">
+            <h3 class="title">Work Experience</h3>
+
+            <ul class="exp">
+                <li>
+                    <div>
+                        <h3>Fidelidade</h3>
+                        <p>Feb '19 - Present</p>
+                    </div>
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <p>Outsystems, Javascript, CSS3, HTML5</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Bee Engineering</h3>
+                        <p>Feb '17 - Jan '19</p>
+                    </div>
+                    <div>
+                        <h3>IT Consulting</h3>
+                        <p>Outsystems, Javascript, CSS3, HTML5</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Wintrust</h3>
+                        <p>May '16 - Feb '17</p>
+                    </div>
+                    <div>
+                        <h3>IT Consulting</h3>
+                        <p>Test Automation: VBScript, Robot Framework, HP UFT&ALM, Exploratory Testing</p>
+                        <p>Web development: ASP C# .NET, Javascript, CSS3, HTML5, Outsystems</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Bold International</h3>
+                        <p>Out '15 - Apr '16</p>
+                    </div>
+                    <div>
+                        <h3>IT Consulting</h3>
+                        <p>Web development: ASP C# .NET, Javascript, CSS3, HTML5, Outsystems</p>
+                        <p>est Automation, C# .NET development, Outsystems development</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>WeWow, Lda</h3>
+                        <p>Mar '15 - Jun '15</p>
+                    </div>
+                    <div>
+                        <h3>Internship - Web Developer</h3>
+                        <p>Web development: ASP C# .NET, Javascript, CSS3, HTML5</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</section>
+
+   
+
+	<section class="skills">
+        <div class="sec-content">
+            <h3 class="title">Skills</h3>
+
+		    <div class="skills-container">
+                <div class="skill-item">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-item">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill-item">
+                    <p>Outsystems</p>
+                </div>
+                <div class="skill-item">
+                    <p>HP UFT/ALM</p>
+                </div>
+                <div class="skill-item">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <p>.NET C#</p>
+                </div>
+                <div class="skill-item">
+                    <p>SQL</p>
+                </div>    
             </div>
-        </section>
+
+		</div>
+	</section>
+
+	<section class="languages">
+        <div class="sec-content">
+            <h3 class="title">Languages</h3>	
+        
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div><strong>Portuguese</strong></div>
+                </div>
+                <div class="skill-item">
+                    <div><strong>Spanish</strong></div>
+                </div>
+                <div class="skill-item">
+                    <div><strong>English</strong></div>
+                </div>
+            </div>
+        </div>
     
-    </body>
+    </section>
+
+    <footer>
+        <div class="sec-content">
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+                <li><a href=""><i class="fa fa-codepen"></i></a></li>
+
+
+            </ul>
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
