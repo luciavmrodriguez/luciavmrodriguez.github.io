@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext');
+
+/*------------------------------------------------------------------------------------------------------
+                                             GENERAL STYLES
+------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: #727272;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    display: flex;   
+    flex-direction: row;
+    flex: 1 0 auto;
+    height: 100%;
+}
+
+.left-bar {
+    flex: 1;
+    min-height: 200px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content {
+    flex: 2;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+/**Controls**/
+a,
+a:link,
+a:visited {
+    text-decoration: none; 
+}
+
+.btn {
+    height: 30px;
+    padding: 6px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    line-height: 1.0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #37cfc9;
+}
+
+.btn-primary:hover {
+    background-color: #727272;
+    transition: background-color 0.3s ease-out;
+}
+
+/*------------------------------------------------------------------------------------------------------
+                                                BASIC INFO
+------------------------------------------------------------------------------------------------------*/
+section.basic-info {
+    height: 100vh;
+}
+
+section.basic-info .left-bar {
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section.basic-info .left-bar img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    
+}
+
+section.basic-info .content {
+    flex-direction: row;
+    align-items: center;
+}
+
+.names p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.names p:nth-child(2) {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #37cfc9;
+    letter-spacing: 10px;
+}
+
+.names p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------
+                                                ABOUT ME
+------------------------------------------------------------------------------------------------------*/
+section.about-me .left-bar {
+    background-color: #f8f8f8;
+}
+
+section.about-me .content {
+    background-color: #fcfcfc;
+}
+
+.resume {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service {
+    margin: 50px;
+    max-width: 100px;
+}
+.service i {
+    font-size: 80px;
+    margin-bottom: 12px;
+    color: #37cfc9;
+}
+
+.service p {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/*------------------------------------------------------------------------------------------------------
+                                                EXPERIENCE
+------------------------------------------------------------------------------------------------------*/
+section.experience .left-bar {
+    background-color: #f8f8f8;
+}
+
+section.experience .content {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.job-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.job-container__details {
+    margin-right: 20px;
+    min-width: 230px;
+}
+
+.job-container__time {
+    font-size: 12px;
+    color: #b5b5b5;
+    margin-bottom: 6px;
+}
+
+.job-container__company {
+    color: #969696;
+    margin-bottom: 6px;
+}
+
+.job-container__place {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.job-container__name {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #565656;
+}
+
+.job-container__desc {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 330px;
+}
+
+section.experience .job-container:not(:last-child):after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #cecece;
+    left: -17px;
+    top: 18px;
+}
+
+section.experience .job-container:before {
+    content: "";
+    position: absolute;
+    background-color: #37cfc9;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: -20px;
+    top: 4px;
+}
+
+/*------------------------------------------------------------------------------------------------------
+                                             EDUCATION
+------------------------------------------------------------------------------------------------------*/
+section.education .left-bar {
+    background-color: #fbfbfb;
+}
+
+section.education .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+.images {
+    position: relative;
+}
+
+img.me-cartoon {
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 250px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.cloud {
+    max-width: 200px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0;
+    animation: float-cloud 3s ease-in-out infinite;
+}
+
+@keyframes float{
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-18px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-cloud{
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+/*------------------------------------------------------------------------------------------------------
+                                            MEDIA QUERIES
+------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 930px) {
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.basic-info {
+        height: unset;
+    }
+
+    section.basic-info .left-bar {
+        background-color: #FFF;
+    }
+
+    section.basic-info .content {
+        justify-content: center;
+    }
+
+    .names {
+        text-align: center;
+    }
+    .names p:nth-child(1) {
+        font-size: 20px;
+    }
+    
+    .names p:nth-child(2) {
+        font-size: 30px;
+    }
+    
+    .names p:nth-child(3) {
+        font-size: 14px;
+    } 
+
+    section.basic-info .btn-primary {
+        margin: 0 auto;
+    }
+    section .left-bar {
+        height: auto;
+        min-height: unset;
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    section.education .left-bar {
+        background-color: #f8f8f8;
+    }
+
+    .job-container__desc {
+        font-size: 16px;
+        max-width: unset;
+    }
+
+    .job-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .job-container__details {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    section.basic-info .images {
+        transform: scale(0.8);
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    
+
+    
+
+
+
+}
